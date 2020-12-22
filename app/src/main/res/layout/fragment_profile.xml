@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CartFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#9ab3f5"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Nama :   "
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_nama_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAMA"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Email  :   "
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_email_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Saldo  :   "
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_saldo_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image_profile"
+        android:layout_width="141dp"
+        android:layout_height="117dp"
+        android:src="#FFF"
+        app:civ_border_color="#9ab3f5"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonGantiNama"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Ganti Nama"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonGantiPassword"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Ganti Password"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonTopUpSaldo"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary"
+            android:text="Top Up Saldo"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonSignOut"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="Sign Out"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
